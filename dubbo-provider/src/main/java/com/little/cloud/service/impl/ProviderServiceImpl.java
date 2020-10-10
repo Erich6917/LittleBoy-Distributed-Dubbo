@@ -9,13 +9,11 @@ import com.little.cloud.service.ProviderService;
  * @Author LiYuan
  * @Date 2020-9-28
  */
-@Service(version = "1.0.0",timeout = 3000,interfaceClass = ProviderService.class)
-//@org.springframework.stereotype.Service
+@Service(version = "1.0.0", interfaceClass = ProviderService.class)
 public class ProviderServiceImpl implements ProviderService {
 
   @Override
   public String sayHello(String word) {
-
     System.out.println("dubbo SayHello : " + word);
     return word;
   }
